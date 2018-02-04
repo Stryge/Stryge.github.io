@@ -6,3 +6,7 @@
 .navbar {
 	background-color: grey;
 }
+.nav-brand {
+	text-color: white;
+	text-decoration: none;
+}
