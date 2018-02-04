@@ -2,11 +2,15 @@
 	display:block;
 	align-content:center;
 }
-
-.navbar {
-	background-color: #d3d3d3;
-}
 .nav-brand {
 	text-color: white;
 	text-decoration: none;
+}
+.roundedImage {
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	width: 90px;
+	height: 110px;
 }
