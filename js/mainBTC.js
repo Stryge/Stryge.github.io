@@ -1,13 +1,3 @@
-var invocation = new XMLHttpRequest();
-var url = 'https://api.blockcypher.com/v1/btc/main';
-
-function callOtherDomain() {
-	if (invocation) {
-		invocation.open('GET', url, true);
-
-	}
-}
-
 $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 	var blockArray = new Array(5);
 
