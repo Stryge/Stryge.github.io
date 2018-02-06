@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="widh=device-width, initial-scale=1">
-		<meta name="description" content="explorer blockchain - Exercise from mubizinc.github.io">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="widh=device-width, initial-scale=1"/>
+		<meta name="description" content="explorer blockchain - Exercise from mubizinc.github.io"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script defer src="img/fontawesome-all.js"></script>
@@ -14,7 +14,7 @@
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">BlockScan</a>
+					<a class="navbar-brand" href="index.html">BlockScan</a>
 				</div>
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a>
@@ -23,7 +23,22 @@
 		</nav>
 		<div class="container">
 			<div class="starter template">
-				<h2>Bitcoin Main</h2>
+				<h2>Latest blocks</h2>
+				<div class="table-striped">
+					<table class="table">
+						<tr>
+							<th>Hauteur</th>
+							<th>Âge</th>
+							<th>Transactions</th>
+							<th>Valeur total</th>
+							<th>Relayé par</th>
+						</tr>
+						<tr id="block1"></tr>
+						<tr id="block2"></tr>
+						<tr id="block3"></tr>
+						<tr id="block4"></tr>
+						<tr id="block5"></tr>
+					</table>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
