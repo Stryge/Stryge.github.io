@@ -26,7 +26,7 @@ $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 
 	blockArray[0] = lastBlock;
 	for (var i = 1; i < 5; i++) {
-			blockArray[i] = $.get('https://api.blockcypher.com/v1/main/blocks/' + (lastBlock.height - i) + '?txstqrt=1&limit=1');
+			blockArray[i] = $.get('https://api.blockcypher.com/v1/main/blocks/' + (lastBlock.height - i) + '?txstart=1&limit=1');
 	}
 	for (var i = 0; i < 5; i++) {
 		console.log(blockArray[i]);
