@@ -29,6 +29,7 @@ $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 			blockArray[i] = $.get('https://api.blockcypher.com/v1/btc/main/blocks/' + (lastBlock.height - i) + '?txstart=1&limit=1');
 	}
 	for (var i = 0; i < 5; i++) {
-		console.log(blockArray[i].responseJSON);
+		var json = JSON.parse(blockArray[i]);
+		console.log(json);
 	}
 });
