@@ -30,7 +30,7 @@ $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 	}
 //	console.log(blockArray[i]);
 	for (var i = 0; i < 5; i++) {
-		console.log(typeof blockArray[i]);
+		console.log(blockArray[i].responseJSON);
 //		var hauteur = blockArray[i].height;
 	}
 });
