@@ -32,10 +32,10 @@ $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 		concatHeight += (height - i);
 	}
 
-	var url = 'https://api.blockcypher.com/v1/btc/main/blocks/509452;509451';
-	console.log(url);
-	$.get(url).then(function(block) {
-		console.log(block);
+	console.log(concatHeight);
+console.log($.get('https://api.blockcypher.com/v1/btc/main/blocks/' + concatHeight).then(function(blocks) {
+		console.log(blocks);
+		blocks.forEeach(function(block) {
 		var tr = document.createElement("tr");
 		var height = document.createElement("th");
 		var time = document.createElement("th");
@@ -53,11 +53,12 @@ $.get('https://api.blockcypher.com/v1/btc/main').then(function(lastBlock) {
 		tr.appendChild(transactions); 
 		tr.appendChild(totalValue); 
 		tr.appendChild(relayedBy);
+		});
 		var table = document.getElementsByClassName("table");
 		console.log(table[0]);
 
 		console.log(tr);
-	})
+	}))
 });
 
 /*penser à augmenter la valeur des boucles for i < 2 à i < 5 */
