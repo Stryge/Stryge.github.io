@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
     <script defer src="img/fontawesome-all.js"></script>
-    <script type="text/javascript" src="tarteaucitron/tarteaucitron.js"></script>
+    <script type="text/javascript" src="./tarteaucitron/tarteaucitron.js"></script>
 		<title>Exercise for a BlockExplorer</title>
 		<?php
 			header("Access-Control-Allow-Origin: blockcypher.com");
@@ -38,6 +38,9 @@
 	</head>
 
 	<body>
+      <script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+      </script>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -68,10 +71,9 @@
 					</table>
 			</div>
     </div>
-    <div class="youtube_player" videoID="xz7n-QCaexM" width="560" height="315" theme="light)" rel="0"
+    <div class="youtube_player" videoID="xz7n-QCaexM" width="560" height="315" theme="light" rel="0"
       controls="0" showinfo="0" autoplay="1"></div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xz7n-QCaexM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<?php
+    <?php
 			header("Access-Control-Allow-Origin: blockcypher.com");
 		?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -79,6 +81,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
-      </script>
+    </script>
 	</body>
 </html>
