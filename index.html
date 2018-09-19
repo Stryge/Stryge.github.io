@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126021948-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126021948-1');
+    </script>
+  
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="description" content="explorer blockchain - Exercise from mubizinc.github.io"/>
@@ -13,6 +23,8 @@
 			header("Access-Control-Allow-Origin: blockcypher.com");
     ?>
 
+
+
     <script type="text/javascript">
     tarteaucitron.init({
       "privacyUrl": "", /* Privacy policy url */
@@ -20,9 +32,9 @@
       "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
       "cookieName": "tartaucitron", /* Cookie name */
 
-      "orientation": "bottom", /* Banner position (top - bottom) */
       "showAlertSmall": true, /* Show the small banner on bottom right */
       "cookieslist": true, /* Show the cookie list */
+      "orientation": "bottom", /* Banner position (top - bottom) */
 
       "adblocker": false, /* Show a Warning if an adblocker is detected */
       "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
